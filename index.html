@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCR2 World Records Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏎️ Hill Climb Racing 2</h1>
+            <p class="subtitle">Adventure World Records Database</p>
+        </header>
+
+        <div class="filters-section">
+            <h2>Filter Records</h2>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="vehicleFilter">Vehicle</label>
+                    <select id="vehicleFilter">
+                        <option value="">All Vehicles</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="mapFilter">Map</label>
+                    <select id="mapFilter">
+                        <option value="">All Maps</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="playerFilter">Player</label>
+                    <select id="playerFilter">
+                        <option value="">All Players</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="currentFilter">Status</label>
+                    <select id="currentFilter">
+                        <option value="">All Records</option>
+                        <option value="1">Current Records Only</option>
+                        <option value="0">Non-Mastery Only</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="resetBtn" class="btn btn-secondary">Reset Filters</button>
+                <button id="applyBtn" class="btn btn-primary">Apply Filters</button>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>World Records <span id="recordCount">(Loading...)</span></h2>
+            <div class="table-wrapper">
+                <table id="recordsTable">
+                    <thead>
+                        <tr>
+                            <th>Vehicle</th>
+                            <th>Map</th>
+                            <th>Player</th>
+                            <th>Country</th>
+                            <th>Distance</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="6" class="loading">Loading records...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>HCR2 World Records Database | Last Updated: <span id="lastUpdate">-</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
