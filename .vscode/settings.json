@@ -1,0 +1,25 @@
+{
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3000,
+            "driver": "PostgreSQL",
+            "name": "connection1",
+            "database": "hcr2_db",
+            "username": "titan"
+        },
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3000,
+            "driver": "PostgreSQL",
+            "username": "titan",
+            "database": "hcr2_db",
+            "name": "connection2",
+            "password": ""
+        }
+    ]
+}

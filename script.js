@@ -1,6 +1,7 @@
 let allRecords = [];
 
-const API_URL = 'http://localhost:3000/api'; // Change this to your backend URL
+// Backend base URL (server exposes /api/records and /api/filters)
+const API_URL = 'http://localhost:3000/api'; // change if your server runs on a different host/port
 
 // Initialize page
 document.addEventListener('DOMContentLoaded', () => {

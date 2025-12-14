@@ -6,10 +6,10 @@ const app = express();
 app.use(cors());
 
 const pool = new Pool({
-    user: 'your_user',
+    user: 'postgres',
     host: 'localhost',
     database: 'hcr2_db',
-    password: 'your_password',
+    password: '2006002',
     port: 5432,
 });
 
@@ -46,4 +46,4 @@ app.get('/api/filters', async (req, res) => {
     }
 });
 
-app.listen(3001, () => console.log('Server running on port 3001'));
+app.listen(3000, () => console.log('Server running on port 3000'));

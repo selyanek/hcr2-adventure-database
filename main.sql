@@ -73,7 +73,8 @@ INSERT INTO Vehicle VALUES
 (28, 'Superbike'),
 (29, 'Supercar'),
 (30, 'Moonlander'),
-(31, 'Bolt');
+(31, 'Bolt'),
+(32, 'Offroader');
 
 
 INSERT INTO Player VALUES
@@ -245,7 +246,8 @@ INSERT INTO Map VALUES
 (18, 'Sky Rock Outpost', 0), 
 (19, 'Forest Trials', 1), 
 (20, 'Intense City', 1),
-(21, 'Raging Winter', 1); 
+(21, 'Raging Winter', 1),
+(22, 'Spring Falls', 0);
 
 INSERT INTO WorldRecord VALUES 
 
